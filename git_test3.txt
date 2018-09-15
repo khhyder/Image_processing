@@ -1,0 +1,23 @@
+Create branch
+
+$git branch firstbranch
+
+To move to the new branch
+
+$git checkout firstbranch
+
+
+Now you are in the second branch
+
+	- Add a new file on the folder
+	- Index with firstbranch by $git add newfile.txt
+	- Commit $git commit -m "making changes in second branch"
+
+Check files on second branch
+$ls
+
+Go back to master branch
+$git checkout master
+
+Then check ls,
+You will see 1 file missing on the list. 
