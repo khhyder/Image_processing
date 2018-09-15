@@ -1,0 +1,11 @@
+Making Changes:
+
+	- $Git Status will show you which files added to the index and which files are yet to be indexed.
+	- $Git add will added files to the index (The command $git add -A will add all files at a time. 
+	- $Git Commit command refers to recording snapshots of the repository at a given time. Commit snapshots will never change unless done explicitly 
+	- Following commands can be  used for $git commit
+	 To commit a singe file $git commit -m "This is first commit for single file"
+	To commit all files in a folder $git commit -a -m "This second commit for all files"
+	
+	To check all changes
+$git log
