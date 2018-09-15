@@ -1,41 +1,17 @@
-Create branch
+After merging if we again go to our branch and make changes in file. Then we have commit changes via 
+$git commit -a -m "Content added to file 3"  #here -a ensure we don’t need to add the files again. We could only do this with already added file to index.
 
-$git branch firstbranch
-
-To move to the new branch
-
-$git checkout firstbranch
+You can always check the file content by 
+$cat filename.txt
 
 
-Now you are in the second branch
+Rebasing
 
-	- Add a new file on the folder
-	- Index with firstbranch by $git add newfile.txt
-	- Commit $git commit -m "making changes in second branch"
+Just do the indexing of branch changes in a linear way.
 
-Check files on second branch
-$ls
+Lets say we added few more files in branch1
+After adding and commit 
+When we come back to master branch again just follow the below git command
+$git rebase branch1 
 
-Go back to master branch
-$git checkout master
-
-Then check 
-$ls
-You will see 1 file missing on the list. 
-
-#############################################################
-*** while commit if we don’t use -m then another prompt will come then
-	- Click "I"  button on key pad
-	- Write your comment
-	- Click on "Esc" button on key pad
-	- Write ":wq" and hit "Enter"
-Without comment you cant commit
-#############################################################
-
-Merge:
-
-Before merging make sure, you are in master node. 
-$git merge branch1 <the branch we want to merge with master>
-Now check 
-$ls
-You will see all files available with master branch
+Then running the ls command we will see all files on the master branch.
