@@ -19,5 +19,23 @@ $ls
 Go back to master branch
 $git checkout master
 
-Then check ls,
+Then check 
+$ls
 You will see 1 file missing on the list. 
+
+#############################################################
+*** while commit if we don’t use -m then another prompt will come then
+	- Click "I"  button on key pad
+	- Write your comment
+	- Click on "Esc" button on key pad
+	- Write ":wq" and hit "Enter"
+Without comment you cant commit
+#############################################################
+
+Merge:
+
+Before merging make sure, you are in master node. 
+$git merge branch1 <the branch we want to merge with master>
+Now check 
+$ls
+You will see all files available with master branch
